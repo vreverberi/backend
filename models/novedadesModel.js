@@ -30,6 +30,7 @@ async function getNovedadById(id) {
 }
 
 async function editarNovedadById(obj, id) {
+    console.log(obj)
     try {
         var query = "update novedades set ? where id=?";
         var rows = await pool.query(query, [obj, id]);

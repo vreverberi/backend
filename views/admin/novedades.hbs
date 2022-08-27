@@ -6,7 +6,7 @@
     </div>
     <div class="row" style="margin: 30px auto">
         <div class="col-7">
-            <h3>Listado de Novedades</h3>
+            <h3>Listado de Viajes</h3>
         </div>
         <div class="col-2 text-right">
             <a href="/admin/novedades/agregar" class="btn btn-success"> <i class="fa fa-plus"></i>Agregar</a>
@@ -18,9 +18,10 @@
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Título</th>
-                        <th scope="col">Subtítulo</th>
-                        <th scope="col" class="text-start">Contenido</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Detalle</th>
+                        <th scope="col" class="text-start">Descripción</th>
+                        <th scope="col">Imagen</th>
                         <th scope="col" class="text-center">Acciones</th>
                     </tr>
                 </thead>
@@ -31,6 +32,7 @@
                         <td>{{titulo}}</td>
                         <td>{{subtitulo}}</td>
                         <td class="text-start">{{cuerpo}}</td>
+                        <td>{{{imagen}}}</td>
                         <td class="text-end">
                             <a class="btn btn-secondary" href="/admin/novedades/editar/{{id}}">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
